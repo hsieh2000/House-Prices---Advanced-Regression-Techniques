@@ -22,6 +22,15 @@ For numerical data, I fill missing values with the mean of each feature to preve
 # Create Dataset
 I have created a class called `HOUSEDataset` to handle the dataset. I transfer data from NumPy arrays to tensors and standardize numerical features. This process helps increase the convergence of the model and assists in preventing issues such as exploding gradients and vanishing gradients.
 
+There is worth noting detail that the validation set will be standardized by the mean and std of the training set.
+Here's why:
+
+1. **Consistency**: During model training, the model learns from the training data, which includes the distribution of features. By standardizing the validation set using the mean and standard deviation of the training set, you are ensuring that the validation data is transformed in the same way as the training data. This consistency is important for fair evaluation of the model's performance.
+
+2. **Avoiding Data Leakage**: Standardizing the validation set using statistics computed from the training set helps to avoid data leakage. Data leakage occurs when information from the validation set unintentionally influences the model training process, leading to overly optimistic performance estimates. By standardizing the validation set separately from the training set, you prevent this leakage and obtain more reliable performance estimates.
+
+3. **Real-world Generalization**: In real-world scenarios, the model will encounter new data with potentially different distributions than the training data. By standardizing the validation set using the training set statistics, you are simulating this scenario and evaluating how well the model generalizes to new, unseen data.
+
 
 
 
