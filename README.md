@@ -17,3 +17,15 @@ For ordinal categorical data, I use `sklearn.preprocessing.OrdinalEncoder` to en
 
 For non-ordinal categorical data, I use `sklearn.preprocessing.OneHotEncoder`. However, I have found that in certain features, the names of categories in *data_description.txt* do not match those in the dataset. To resolve this discrepancy, I adjust the category names in the dataset according to *data_description.txt*.
 
+For numerical data, I fill missing values with the mean of each feature to prevent errors when inputting data into the neural network model.
+
+# Create Dataset
+I have created a class called `HOUSEDataset` to handle the dataset. I transfer data from NumPy arrays to tensors and standardize numerical features. This process helps increase the convergence of the model and assists in preventing issues such as exploding gradients and vanishing gradients.
+
+
+
+
+
+
+
+
