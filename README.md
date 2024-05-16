@@ -14,5 +14,7 @@ and the categroical data could be futher divided into ordinal and non-ordinal da
 
 To encode categroical data, I load *data_description.txt* and extract the information of each feature's categroies.
 
-For 
+For ordinal categroical data, I apply `sklearn.preprocessing.OrdinalEncoder` to encode data, and transfer nan value with -1.
+
+For non-ordinal categorical data, I use `sklearn.preprocessing.OneHotEncoder`. However, I have found that in certain features, the names of categories in *data_description.txt* do not match those in the dataset. To resolve this discrepancy, I adjust the category names in the dataset according to *data_description.txt*.
 
