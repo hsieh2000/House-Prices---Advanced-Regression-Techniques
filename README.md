@@ -9,12 +9,11 @@ The dataset can be downloaded [here](https://www.kaggle.com/competitions/house-p
 # Preprocessing
 Firstly, I observe the train and the test dataset to make sure that two datasets follow the same distrbution.
 
-Next, through observing the dtype of dataset, I split data into two types - numerical and categroical data,
-and the categroical data could be futher divided into ordinal and non-ordinal data.
+Next, by observing the data types of the dataset, I split the data into two types: numerical and categorical data. The categorical data can be further divided into ordinal and non-ordinal data.
 
 To encode categroical data, I load *data_description.txt* and extract the information of each feature's categroies.
 
-For ordinal categroical data, I apply `sklearn.preprocessing.OrdinalEncoder` to encode data, and transfer nan value with -1.
+For ordinal categorical data, I use `sklearn.preprocessing.OrdinalEncoder` to encode the data and replace missing values with -1.
 
 For non-ordinal categorical data, I use `sklearn.preprocessing.OneHotEncoder`. However, I have found that in certain features, the names of categories in *data_description.txt* do not match those in the dataset. To resolve this discrepancy, I adjust the category names in the dataset according to *data_description.txt*.
 
