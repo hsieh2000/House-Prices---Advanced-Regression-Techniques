@@ -12,4 +12,5 @@ Firstly, I observe train and test dataset to make sure that two datasets follow 
 Next, I split data into two types - numerical and categroical data,
 and the categroical data could be futher divided into ordinal and non-ordinal data.
 
-To encode categroical data, I load *data_description.txt* and save the categroies of each feature.
+To encode categroical data, I load *data_description.txt* and extract the information of each feature's categroies.
+
