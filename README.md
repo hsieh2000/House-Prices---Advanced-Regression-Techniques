@@ -9,7 +9,7 @@ The dataset can be downloaded [here](https://www.kaggle.com/competitions/house-p
 # Preprocessing
 Firstly, I observe the train and the test dataset to make sure that two datasets follow the same distrbution.
 
-Next, I use dtype of `pandas` I split data into two types - numerical and categroical data,
+Next, through observing the dtype of dataset, I split data into two types - numerical and categroical data,
 and the categroical data could be futher divided into ordinal and non-ordinal data.
 
 To encode categroical data, I load *data_description.txt* and extract the information of each feature's categroies.
