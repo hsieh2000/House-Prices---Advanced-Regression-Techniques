@@ -31,9 +31,10 @@ According to online resource and Chat-GPT, I conclude several point why we have 
 
 3. **Real-world Generalization**: In real-world scenarios, the model will encounter new data with potentially different distributions than the training data. By standardizing the validation set using the training set statistics, you are simulating this scenario and evaluating how well the model generalizes to new, unseen data.
 
-# Construct Network
-Before I apply neuron network to solve this regression problem, I uesd polynomial regression with back elimination to predict SalePrice as the benchmark, which get 0.17353 on public score. 
-When I firstly construct the network, the architecture is really simple, it is construct by two Dense layers and one ReLU activation function, the loss function is MSELoss, and the optimizer is Adam   
+# Construct Network  
+Before I apply neuron network to solve this regression problem, I uesd polynomial regression with back elimination to predict SalePrice as the baseline, which get 0.17353 on public score. The score is probably in the bottom 30% of the leaderboard.  
+
+When I firstly construct the network, the architecture is really simple, constructed by two Dense layers and one ReLU activation function, the loss function is MSELoss, and the optimizer is Adam.  The public score of this primitive network prediction is 0.16941, the loss of validation set is pretty high compares to the final model though. 
 
 
 
