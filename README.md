@@ -37,7 +37,7 @@ Before I apply neuron network to solve this regression problem, I uesd polynomia
 When I firstly construct the network, the architecture is really simple, constructed by two Dense layers and one ReLU activation function, the loss function is MSELoss, and the optimizer is Adam.  The public score of this primitive model prediction is 0.16941, which already transcend the baseline, the loss of validation set is pretty high compares to the final model though. 
 
 Since the validation loss still high, I do lots of attempts to diminish it.  
-1. **Netowork Architecture**: I increase complexity of model by adding multiple layers, the performance of model does improve. However, the improvement seems limited.
+1. **Netowork Architecture**: I increase complexity of model by adding multiple layers, the performance of model does improve. However, the improvement seems limited. And I find out the when the adding layers exceeds a certain number, both training and validation loss will encounter a severe oscillation.
 
 
 
