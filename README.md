@@ -34,8 +34,10 @@ According to online resource and Chat-GPT, I conclude several point why we have 
 # Construct Network  
 Before I apply neuron network to solve this regression problem, I uesd polynomial regression with back elimination to predict SalePrice as the baseline, which get 0.17353 on public score. The score is probably in the bottom 30% of the leaderboard.  
 
-When I firstly construct the network, the architecture is really simple, constructed by two Dense layers and one ReLU activation function, the loss function is MSELoss, and the optimizer is Adam.  The public score of this primitive network prediction is 0.16941, which already transcend the baseline, the loss of validation set is pretty high compares to the final model though. 
+When I firstly construct the network, the architecture is really simple, constructed by two Dense layers and one ReLU activation function, the loss function is MSELoss, and the optimizer is Adam.  The public score of this primitive model prediction is 0.16941, which already transcend the baseline, the loss of validation set is pretty high compares to the final model though. 
 
+Since the validation loss still high, I do lots of attempts to diminish it.  
+1. **Netowork Architecture**: I increase complexity of model by adding multiple layers, the performance of model does improve. However, the improvement seems limited.
 
 
 
