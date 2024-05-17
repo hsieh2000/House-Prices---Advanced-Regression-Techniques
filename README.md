@@ -52,7 +52,8 @@ Adam is the combination of RMSProp + Momentum. In RMSProp, the weight `θ(t+1)` 
 
 Back to the point, I have decided to continue using MSELoss to evaluate the performance of the model. I experiment with different combinations of hyperparameters and network architectures, and discover several principles of machine learning. For instance, deeper models require smaller learning rates to prevent severe oscillations, and larger batch sizes typically result in lower loss values. I also make other adjustments to observe their impact on performance, such as changing activation functions and applying L2 regularization to improve the model's generalization ability.   
 
-After countless tuning and adjustments, I have successfully improved the public score to 0.13676, placing it approximately in the top 30% of the leaderboard. However, there are still plenty of opportunities to further enhance its performance.
+After countless tuning and adjustments, I have successfully improved the public score to 0.13676, placing it approximately in the top 30% of the leaderboard. However, there are still plenty of opportunities to further enhance its performance.  
+
 ![image](https://github.com/hsieh2000/House-Prices---Advanced-Regression-Techniques/blob/main/pic/%E6%88%AA%E5%9C%96%202024-05-17%20%E4%B8%8B%E5%8D%886.37.50.png)
 
 
