@@ -39,7 +39,7 @@ When I firstly construct the network, the architecture is really simple, constru
 Since the validation loss still high, I do lots of attempts to diminish it.  
 1. **Netowork Architecture**: I increase complexity of model by adding multiple layers, the performance of model does improve. However, the improvement seems limited. And I find out the when the adding layers exceeds a certain number, both training and validation loss will encounter a severe oscillation and eventually end with higher loss value then the model prediction .
 
-2. **Optimizer**: Since changing netowork architecture doesn't have significant improvement and even cause the worse result, I try to cut through from different angle. Theoretically, the deeper netowork can do and shoud do the work better than the naive netowork, if not, I think I probably have an optimizer problem.
+2. **Optimizer**: Since changing netowork architecture doesn't have significant improvement and even cause the worse result, I try to cut through from different angle. Theoretically, the deeper netowork can do and shoud do the work better than the naive netowork, if not, I think I probably have an optimization issue, maybe Adam is not suitable for this problem.  I switch the optimizer from Adam to the other often-used optimizer - SGD, and set learning rate to 0.001, momentum to 0.9. Based on exprience, momentum = 0.9 normally get the best performance
 3. 
 
 
