@@ -54,11 +54,4 @@ Back to the point, I have decided to continue using MSELoss to evaluate the perf
 
 After countless tuning and adjustments, I have successfully improved the public score to 0.13676, placing it approximately in the top 30% of the leaderboard. However, there are still plenty of opportunities to further enhance its performance.  
 
-![image](https://github.com/hsieh2000/House-Prices---Advanced-Regression-Techniques/blob/main/pic/%E6%88%AA%E5%9C%96%202024-05-17%20%E4%B8%8B%E5%8D%886.37.50.png)
-
-
-
-
-
-
-
+![image](https://github.com/hsieh2000/House-Prices---Advanced-Regression-Techniques/blob/main/pic/%E6%88%AA%E5%9C%96%202024-05-23%20%E4%B8%AD%E5%8D%8812.49.57.png)
